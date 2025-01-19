@@ -1,8 +1,9 @@
 package org.example;
 
 import org.example.CustomTree.CustomTree;
-import org.example.CustomTree.Node;
-import org.example.LinkedList.CustomLinkedList;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,15 +26,19 @@ public class Main {
 //        list.isEmpty();
 //        list.display();
 
+//        ArrayList<Integer> ints = new ArrayList<Integer>(Arrays.asList(1,2,3,4));
+//        System.out.print(ints);
+
         CustomTree tree = new CustomTree();
-        Node root = new Node(1);
-        tree.insert(0, root);
-        tree.insert(1, root);
-        tree.insert(3, root);
-        tree.insert(2, root);
-//        tree.inorder(root);
-//        tree.preOrder(root);
-//        tree.postOrder(root);
-        tree.Search(9, root);
+        tree.insert(50);
+        tree.insert(30);
+        tree.insert(20);
+        tree.insert(40);
+        tree.insert(70);
+        tree.insert(60);
+        tree.insert(80);
+
+        tree.BFS();
+
     }
 }
